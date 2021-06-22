@@ -1,54 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no" />
+    <meta name="title" content="Closinator">
+    <meta name="description" content="Closinator is a bot, aimed at finding low-quality posts."/>
     <title>Closinator</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   </head>
   <body>
-  <style>
-    .cen {
-      text-align: center;
-      color: #30D5C8;
-    }
-    .cen2 {
-      text-align: center;
-    }
-    .cen3 {
-      text-align: left;
-      color: #30D5C8;
-  </style>
-    <script src="script.js"></script>
-    <div>
-      <h1 class = cen>Closinator</h1>
-    </div>
-  <p class = "cen2">Closinator is a bot, aimed at finding low-quality posts on <a href = "https://stackoverflow.com">Stack Overflow</a>. </p>
-  <p class = "cen2">If you wish to learn how the bot works, see <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">How to Participate</a>. If you want to see the bot in action, drop by it's <a href = "https://chat.stackoverflow.com/rooms/227704/bot-room">dedicated chatroom</a>.
-  The bot is entirely open-source, and it's code can be found on <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">GitHub</a>. </p>
-  <p class = "cen2">If you have any concerns, or you wish to contact the owner of the bot, see <a href = "who_has_privileges.html">Who is admin?</a> for more details. </p>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Closinator</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./who_has_privileges.html">Who has privileges?</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav><br><br><br>
+  <h1 class="text-center" id="Title">Closinator</h1><br>
   <div>
-    <h2 class = "cen3">So what is Closinator?</h2>
-    <p>As stated above, Closinator is a chatbot, which aims to eliminate low-quality posts across <a href = "https://stackoverflow.com">Stack Overflow</a>.
-    Using certain algorithms, it reports posts to the <a href = "https://chat.stackoverflow.com/rooms/227704/bot-room">dedicated chatroom</a>, and users can give feedback
+    <p class="text-center">
+      Closinator is a bot, aimed at finding low-quality posts on <a href="https://stackoverflow.com">Stack Overflow</a>
+    </p>
+    <p class="text-center">
+      If you wish to learn how the bot works, see <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">How to Participate</a>. If you want to see the bot in action, drop by it's <a href="https://chat.stackoverflow.com/rooms/227704/bot-room">dedicated chatroom</a>. The bot is entirely open-source, and it's code can be found on <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">GitHub</a>. 
+    </p>
+    <p class="text-center">
+      If you have any concerns, or you wish to contact the owner of the bot, see <a href="./who_has_privileges.html">Who is admin?</a> for more details. 
+    </p>
+  </div>
+  <div>
+    <h2 class="text-center" id="Title">So what is Closinator?</h2><br>
+    <p class="text-center">As stated above, Closinator is a chatbot, which aims to eliminate low-quality posts across <a href = "https://stackoverflow.com">Stack Overflow</a>.
+    Using certain algorithms, it reports posts to the <a href="https://chat.stackoverflow.com/rooms/227704/bot-room">dedicated chatroom</a>, and users can give feedback
     as to whether the post is low-quality or not. To participate, a basic knowledge of how Stack Overflow moderation works is needed. </p>
   </div>
   <div>
-    <h2 class = "cen3">How does giving feedback work?</h2>
-    <p>First and foremost, see the definition of <a href = "https://example.org">low-quality post</a> before reading how to give feedback. This is necessary. Aditionally, one must create an
-    account with Closinator. See <a href = "https://example.org">Create an account</a> for more details on that. </p>
-    <p>There are two types of feedback:
+    <h2 class="text-center" id="Title">How does giving feedback work?</h2><br>
+    <p class="text-center">First and foremost, see the definition of <a href="https://example.org">low-quality post</a> before reading how to give feedback. This is necessary. Aditionally, one must create an
+    account with Closinator. See <a href="https://example.org">Create an account</a> for more details on that. </p></div>
+    <div>
+    <h4 class="text-center" id="Title">There are two types of feedback:</h4><br>
     <ul>
       <li> <b>TP</b>: This means the post is low-quality and as such are eligible for closure. Please see the rules for <a href = "https://stackoverflow.com/help/closed-questions">when a post should be closed</a>.</li>
       <li> <b>LQ</b>: When a post is low-quality but is strictly <b><i>NOT</i></b> eligible for closure. If the post can be closed, use <b>TP</b> instead. We want to catch low-quality posts as well! </li>
       <li> <b>FP</b>: If a post is not low-quality and a post is not eligible for closure. This should be used for when a post is high-quality and can get good answers,
       and be useful for the site. </li>
-      <li> <b>TPU</b>: This is the same feedback as TP, but this additionally sends a <kbd>cv-pls</kbd> request to the <a href = https://chat.stackoverflow.com/rooms/41570/so-close-vote-reviewers>SOCVR (Stack Overflow Close Vote Reviewers)</a> chatroom.
-      Please read the <a href = https://socvr.org/>FAQ</a> of SOCVR before sending a request! Some posts are not eligible to be sent as a request
+      <li> <b>TPU</b>: This is the same feedback as TP, but this additionally sends a <kbd>cv-pls</kbd> request to the <a href="https://chat.stackoverflow.com/rooms/41570/so-close-vote-reviewers">SOCVR (Stack Overflow Close Vote Reviewers)</a> chatroom.
+      Please read the <a href="https://socvr.org">FAQ</a> of SOCVR before sending a request! Some posts are not eligible to be sent as a request
       there. </li>
     </ul>
-    <p>Giving feedback does <i>not</i> require any privileges (other than an account), and you are free to give feedback at any time.
-      However, if you see any user abusing the feedback system, their account will be destroyed by anyone with the proper privileges. </p>
   </div>
+    <div>
+    <p class="text-center">Giving feedback does <i>not</i> require any privileges (other than an account), and you are free to give feedback at any time.
+      However, if you see any user abusing the feedback system, their account will be destroyed by anyone with the proper privileges.</p>
+    </div>
   </body>
 </html>
