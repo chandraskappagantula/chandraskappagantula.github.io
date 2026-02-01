@@ -1,5 +1,6 @@
 import { Intro } from "./components/Intro"
 import { Navbar } from "./components/Navbar"
+import { ProjectsSection } from "./components/ProjectSection"
 import './App.css'
 
 function App() {
@@ -13,12 +14,14 @@ function App() {
         className="min-h-screen bg-blue text-white p-16"
       >
         <h2 className="text-4xl">About Me</h2>
+        
       </section>
     <section
         id="projects"
         className="min-h-screen bg-blue text-white p-16"
       >
         <h2 className="text-4xl">Projects</h2>
+        <ProjectsSection />
       </section>
 
       <section

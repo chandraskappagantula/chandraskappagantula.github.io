@@ -50,9 +50,8 @@ export function Navbar() {
               >
                 {link.label}
 
-                {/* underline */}
                 <span
-                  className={`absolute left-0 -bottom-0.5 h-[2px] w-full bg-white
+                  className={`absolute left-0 -bottom-0.5 h-[2px] w-full bg-red-400
                     transition-transform duration-300 ease-out
                     ${
                       isActive
