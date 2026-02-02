@@ -9,6 +9,7 @@ function App() {
     <main>
       <Navbar />
     <section id = "intro" className="min-h-screen flex items-center bg-blue text-white"><Intro /></section>
+  
     <section
         id="about"
         className="min-h-screen bg-blue text-white p-16"
@@ -16,6 +17,11 @@ function App() {
         <h2 className="text-4xl">About Me</h2>
         
       </section>
+    <section 
+      id = "research"
+      className = "min-h-screen bg-blue text-white p-16">
+        <h2 className = "text-4xl"> Research Experience </h2>
+        </section>
     <section
         id="projects"
         className="min-h-screen bg-blue text-white p-16"

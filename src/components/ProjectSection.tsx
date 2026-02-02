@@ -3,7 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 const projects = [
     {
         title: "Differential Photometry Pipeline", 
-        description: "A pipeline created for the ASTR-098 research course. Automatically takes a series of exposures as time-series data and returns a light-curve and time-series analysis.",
+        description: "A pipeline created for the ASTR-098 research course. Automatically takes a series of exposures as time-series data and returns a light-curve. ",
         tags: ["Python", "SIRIL", "astropy", "Differential Photometry"], 
         link: "https://github.com/chandraskappagantula/PhotometryPipelineEVCResearchCourse",
     },
@@ -14,16 +14,17 @@ const projects = [
         link: "https://github.com/chandraskappagantula/Photometry_RRLyrae"
     }, 
     {
-        title: "Personal Website", 
-        description: "Created a website to showcase my research and projects (inception much?)", 
-        tags: ["TypeScript", "Tailwind", "HTML/CSS/JS Web Dev", "Git"],
-        link: "https://github.com/chandraskappagantula/chandraskappagantula.github.io"
-    },
-    {
+        
         title: "Calendar App", 
         description: "A proof-of-concept calendar app created with Python and Tkinter with functional event managent, productivity assistant, and partial spotify integration.", 
         tags: ["Python", "Tkinter"],
         link: "https://github.com/chandraskappagantula/CalendarAppTkinter"
+    },
+    {
+        title: "Personal Website", 
+        description: "Created a website to showcase my research and projects, and additionally to practice my Git and web development skills. (inception much?)", 
+        tags: ["TypeScript", "Tailwind", "HTML/CSS/JS Web Dev", "Git"],
+        link: "https://github.com/chandraskappagantula/chandraskappagantula.github.io"
     }
 ];
 

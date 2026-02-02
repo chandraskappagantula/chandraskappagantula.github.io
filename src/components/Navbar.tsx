@@ -43,8 +43,8 @@ export function Navbar() {
                 className={`relative pb-1 transition-colors duration-300
                   ${
                     isActive
-                      ? "text-blue"
-                      : "text-gray-400 hover:text-blue"
+                      ? "text-blue-400"
+                      : "text-gray-400 hover:text-blue-400"
                   }
                 `}
               >
