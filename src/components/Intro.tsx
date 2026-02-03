@@ -28,7 +28,7 @@ export function Intro() {
             ‎ 
             <div className = "flex gap-10 mx-auto justify-center">
                 <Button href = "#research" text = "View Reserch">
-                    <p className = "text-blue-400"> View Research </p>
+                    <p className = "text-blue-400"> View Experience </p>
                 </Button>
                 <Button href = "#contact" text = "Contact">
                     <p className = "text-blue-400"> Get in touch </p>

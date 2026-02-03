@@ -9,8 +9,8 @@ const abouts = [
     },
     {
         title: "Languages + tools", 
-        description: " ", 
-        para: "A list of languages and tools I've used/learnt", 
+        description: "A list of languages and tools I've used/learnt", 
+        para: "", 
         tags: ["Python", "Java", "Linux (WSL)", "Arduino C++", "HTML", "CSS", "JS", "Tailwind", "LaTeX"], 
         link: " "
     },

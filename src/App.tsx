@@ -10,7 +10,7 @@ function App() {
   return (
     <main>
       <Navbar />
-    <section id = "intro" className=" py-32 flex items-center bg-blue text-white"><Intro /></section>
+    <section id = "intro" className=" py-32 flex items-center bg-blue"><Intro /></section>
   
     <section
         id="about"
@@ -22,7 +22,7 @@ function App() {
     <section 
       id = "research"
       className = "bg-blue text-white pt-12 pb-18">
-        <h2 className = "text-4xl"> Research Experience </h2>
+        <h2 className = "text-4xl"> Experience </h2>
         <ResearchSection />
         </section>
     <section
@@ -31,7 +31,7 @@ function App() {
       >
         <h2 className="text-4xl">Projects</h2>
         ‎ 
-        <p className = "text-sm text-gray-400"> Here are some of the projects I've created to help with research and solve problems </p>
+        <h2 className = "text-lg text-gray-400"> Here are some of the projects I've created to help with research, solve problems, and develop technical skills </h2>
         <ProjectsSection />
       </section>
 
