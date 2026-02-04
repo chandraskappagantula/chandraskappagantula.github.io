@@ -3,9 +3,8 @@ import { useEffect, useState } from "react";
 const links = [
   { id: "intro", label: "Home" },
   { id: "about", label: "About Me"},
-  { id: "research", label: "Research Experience"},
+  { id: "research", label: "Experience"},
   { id: "projects", label: "Projects" },
-  { id: "contact", label: "Contact" },
 ];
 
 export function Navbar() {

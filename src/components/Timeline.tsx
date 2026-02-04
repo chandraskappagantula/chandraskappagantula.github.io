@@ -16,7 +16,7 @@ const timeline: TimelineEntry[] = [
       "Analyzing stellar kinematics of megamaser disk galaxies using Keck IFU spectroscopy.",
   },
   {
-    title: "Photometry Research",
+    title: "Photometry & Observing @ EVC Observatory",
     subtitle: "Evergreen Valley College (Dual Enrollment)",
     date: "March 2024 - December 2025",
     description:

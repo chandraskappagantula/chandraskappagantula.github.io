@@ -5,12 +5,13 @@ import { ResearchSection } from "./components/ResearchSection";
 import './App.css'
 import { AboutSection } from "./AboutSection"
 
+
 function App() {
 
   return (
     <main>
       <Navbar />
-    <section id = "intro" className=" py-32 flex items-center bg-blue"><Intro /></section>
+    <section id = "intro" className=" py-32 items-center bg-blue"><Intro /></section>
   
     <section
         id="about"
@@ -21,27 +22,21 @@ function App() {
       </section>
     <section 
       id = "research"
-      className = "bg-blue text-white pt-12 pb-18">
+      className = "bg-blue text-white py-16">
         <h2 className = "text-4xl"> Experience </h2>
         <ResearchSection />
         </section>
     <section
         id="projects"
-        className="bg-blue text-white p-24"
+        className="bg-blue text-white py-8"
       >
         <h2 className="text-4xl">Projects</h2>
         ‎ 
-        <h2 className = "text-lg text-gray-400"> Here are some of the projects I've created to help with research, solve problems, and develop technical skills </h2>
+        <h2 className = "text-lg text-gray-400"> Here are some of the projects I've created to help with research, solve problems, and further develop my technical skills </h2>
         <ProjectsSection />
       </section>
-
-      <section
-        id="contact"
-        className="bg-blue text-white p-16"
-      >
-        <h2 className="text-4xl">Contact</h2>
-      </section>
     </main>
+
   )
 }
 
