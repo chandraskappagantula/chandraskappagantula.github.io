@@ -12,9 +12,9 @@ export function AboutCard({title, description, para, tags, link}: AboutProps) {
        rel="noopener noreferrer"
        className="block">
         <div className = "relative rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition">
-            <h2 className = "text-xl text-blue-400 font-semibold">{title}</h2>
-            <h3 className = "text-lg text-white font">{description}</h3>
-            <p className = "mt-1 text-sm text-gray-400">{para}</p>
+            <h2 className = "text-xl text-blue-400 font-semibold  flex items-center justify-center">{title}</h2>
+            <h3 className = "text-lg text-white font  flex items-center justify-center">{description}</h3>
+            <p className = "mt-1 text-sm text-gray-400  flex items-center justify-center">{para}</p>
             {tags && (
             <div className="mt-2 mx-auto center-justify">
                 {tags.map((tag) => (

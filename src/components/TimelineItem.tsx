@@ -1,19 +1,18 @@
 import { TimelineCard } from "./TimelineCard";
+import type { Experience } from "../components/Experience.ts";
+
 type Props = {
-  title: string;
-  subtitle: string;
-  date: string;
-  description: string;
+  experience: Experience;
   side: "left" | "right";
 };
-export function TimelineItem({ title, subtitle, date, description, side }: Props) {
+export function TimelineItem({ experience, side }: Props) {
     const isLeft = side === "left";
 
   return (
     <div className="grid grid-cols-[1fr_40px_1fr] items-start">
 
       <div className={isLeft ? "pr-8 text-right justify-end" : ""}>
-        {isLeft && <TimelineCard {...{ title, subtitle, date, description, side }} />}
+        {isLeft && <TimelineCard {...{ experience, side }} />}
       </div>
 
       <div className="relative flex justify-center">
@@ -21,7 +20,7 @@ export function TimelineItem({ title, subtitle, date, description, side }: Props
       </div>
 
       <div className={!isLeft ? "pl-8 justify-start" : ""}>
-        {!isLeft && <TimelineCard {...{ title, subtitle, date, description, side }} />}
+        {!isLeft && <TimelineCard {...{ experience, side }} />}
       </div>
     </div>
   );

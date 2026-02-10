@@ -1,43 +1,15 @@
-import { Intro } from "./components/Intro"
-import { Navbar } from "./components/Navbar"
-import { ProjectsSection } from "./components/ProjectSection"
-import { ResearchSection } from "./components/ResearchSection";
-import './App.css'
-import { AboutSection } from "./AboutSection"
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import ExperiencePage from "./pages/ExperiencePage";
 
-
-function App() {
-
+export default function App() {
   return (
-    <main>
-      <Navbar />
-    <section id = "intro" className=" py-32 items-center bg-blue"><Intro /></section>
-  
-    <section
-        id="about"
-        className="bg-blue text-white py-16"
-      >
-        <h2 className="text-4xl">About Me</h2>
-        <AboutSection />
-      </section>
-    <section 
-      id = "research"
-      className = "bg-blue text-white py-16">
-        <h2 className = "text-4xl"> Experience </h2>
-        <ResearchSection />
-        </section>
-    <section
-        id="projects"
-        className="bg-blue text-white py-8"
-      >
-        <h2 className="text-4xl">Projects</h2>
-        ‎ 
-        <h2 className = "text-lg text-gray-400"> Here are some of the projects I've created to help with research, solve problems, and further develop my technical skills </h2>
-        <ProjectsSection />
-      </section>
-    </main>
-
-  )
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/project/:id" element={<ExperiencePage />} />
+      </Route>
+    </Routes>
+  );
 }
-
-export default App

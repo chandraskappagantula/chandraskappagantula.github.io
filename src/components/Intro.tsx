@@ -5,11 +5,11 @@ import { Github, Linkedin, Instagram, Mail} from "lucide-react";
 export function Intro() {
     return(
         <div className = "max-w-4x1 mx-auto px-6">
-            <p>Hello, I'm</p>
-            <h1 className = "text-6x1 font-bold text-blue-400 tracking-tight">Chandrasekhar (Chandra)</h1>
-            <h1 className = "text-6x1 font-bold text-red-400 tracking-tight">Kappagantula</h1>
+            <p className = "flex items-center justify-center">Hello, I'm</p>
+            <h1 className = "text-6x1 font-bold text-blue-400 tracking-tight flex items-center justify-center">Chandrasekhar (Chandra)</h1>
+            <h1 className = "text-6x1 font-bold text-red-400 tracking-tight flex items-center justify-center">Kappagantula</h1>
             ‎ 
-            <h2 className = "text-6x10 text-xl font-size-32px tracking-tight"> A first year Physics Student at Cal Poly SLO, researching the cosmos step by step</h2>
+            <h2 className = " flex items-center justify-center text-6x10 text-xl font-size-32px tracking-tight"> A first year Physics Student at Cal Poly SLO, researching the cosmos step by step</h2>
             ‎ 
             <div className = "flex gap-10 mx-auto justify-center">
                 <IconButton href = "https://github.com/chandraskappagantula" label = "Github">

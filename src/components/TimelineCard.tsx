@@ -1,13 +1,17 @@
+import type { Experience } from "../components/Experience.ts";
+
 type Props = {
-  title: string;
-  subtitle: string;
-  date: string;
-  description: string;
+  experience: Experience;
   side: "left" | "right";
 };
 
+import { useNavigate } from "react-router-dom";
 
-export function TimelineCard({title, subtitle, date, description, side }: Props) {
+
+
+
+export function TimelineCard({experience, side }: Props) {
+  const navigate = useNavigate();
     const isRightAligned = side == "right";
   return (
     <div
@@ -16,7 +20,7 @@ export function TimelineCard({title, subtitle, date, description, side }: Props)
         ${isRightAligned ? "text-right" : "text-left"}
       `}
     >
-      {/* Header: title + date */}
+
       <div
         className={`
           flex items-start gap-4 justify-between
@@ -24,19 +28,20 @@ export function TimelineCard({title, subtitle, date, description, side }: Props)
         `}
       >
         <div>
-          <h3 className="text-lg font-semibold">{title}</h3>
-          <p className="text-sm text-gray-400">{subtitle}</p>
+          <h3 className="text-lg font-semibold">{experience.title}</h3>
+          <p className="text-sm text-gray-400">{experience.subtitle}</p>
         </div>
 
         <span className="text-xs text-gray-400 whitespace-nowrap">
-          {date}
+          {experience.date}
         </span>
       </div>
 
-      {/* Description */}
+
       <p className="mt-3 text-sm text-gray-300">
-        {description}
+        {experience.description}
       </p>
+      <button onClick = {() => navigate(`/project/${experience.title}`)} className = "mt-3 border-white/15 bg-white/5 backdrop-blur-md text-blue-400 hover:text-red-400 flex justify-center items-center">View Details</button>
     </div>
   );
 }

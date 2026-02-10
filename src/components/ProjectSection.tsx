@@ -25,17 +25,24 @@ const projects = [
         description: "Created a website to showcase my research and projects, and additionally to practice my Git and web development skills. (inception much?)", 
         tags: ["TypeScript", "Tailwind", "HTML/CSS/JS Web Dev", "Git"],
         link: "https://github.com/chandraskappagantula/chandraskappagantula.github.io"
+    },
+    {
+        title: "TESS Data Analysis Experiment",
+        description: "Used TESS modules and implementations I learnt at a workshop during AAS 245; gathered data for eclipsing binaries and various types of pulsating stars with TESSCut and lightkurve. (work in progress)",
+        tags: ["Python", "Jupyter", "Linux", "TESS"],
+        link: "https://docs.google.com/presentation/d/1uYV-6o0R9NnwkwZxA-n-1VWPFp6HE1byQ3VMONe9dvU/edit?slide=id.p#slide=id.p"
     }
 ];
 
 export function ProjectsSection() {
     return (
-        <section id = "projects" className = "min-h-screen text-white">
-            <div className="max-w-6xl mx-auto px-6 py-3">
+        <section id = "projects" className = "text-white">
+            <div className="max-w-6xl px-6 py-3">
         
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {projects.map((project) => (
+            <div className = "last:md:col-span-2 last:md:max-w-xl last:md:mx-auto">
             <ProjectCard
               key={project.title}
               title={project.title}
@@ -43,9 +50,13 @@ export function ProjectsSection() {
               tags={project.tags}
               link = {project.link}
             />
+            </div>
           ))}
         </div>
+        
       </div>
+      
         </section>
+        
     )
 }
