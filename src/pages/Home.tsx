@@ -2,6 +2,7 @@ import { Intro } from "../components/Intro.tsx";
 import { Navbar } from "../components/Navbar";
 import { ProjectsSection } from "../components/ProjectSection";
 import { ResearchSection } from "../components/ResearchSection";
+import { PublicationSection } from "../components/PublicationSection";
 import { AboutSection } from "../AboutSection";
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="py-16">
+      <section id="about" className="py-8">
         <div className = "mx-auto max-w-6xl px-6">
         <h2 className="text-4xl mb-6 flex items-center justify-center">About Me</h2>
         <AboutSection />
@@ -43,6 +44,13 @@ export default function Home() {
 
         </div>
 
+      </section>
+
+      <section id = "publications" className = "py-8">
+        <div className = "mx-auto max-w-6xl px-6">
+          <h2 className = "text-4xl mb-4 flex items-center justify-center">Publications</h2>
+          <PublicationSection />
+        </div>
       </section>
 
       <section id="contact" className="py-16">

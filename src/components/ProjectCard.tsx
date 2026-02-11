@@ -12,13 +12,13 @@ export function ProjectCard({title, description, tags, link}: CardProps) {
         <a href = {link} target="_blank"
        rel="noopener noreferrer"
        className="block">
-        <div className = "relative rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition">
+        <div className = " mx-auto relative rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition p-6 text-center">
         <ExternalLink size={16} className = "absolute top-1 right-4 text-red-500"/>
         <h3 className = "text-lg text-blue-400 font-semibold flex items-center justify-center">{title}</h3>
-        <p className = "mt-1 text-sm text-gray-400  flex items-center justify-center">{description}</p>
+        <p className = "mt-1 text-sm text-gray-400  mx-auto">{description}</p>
         
         {tags && (
-            <div className="mt-2 mx-auto center-justify">
+            <div className="mt-2 mx-auto">
                 {tags.map((tag) => (
                     <span key = {tag}
                     className = "text-xs px-2 py-1 rounded-full text-center mx-auto bg-white/10 text-gray-300">
