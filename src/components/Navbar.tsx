@@ -39,10 +39,15 @@ export function Navbar() {
           const isActive = activeId === link.id;
 
           return (
-            <li key={link.id}>
-              <a
-                href={`#${link.id}`}
-                className={`relative pb-1 transition-colors duration-300
+            <li key={link.id} className = "bg-black">
+              <button
+                onClick={() => {
+                  const section = document.getElementById(link.id);
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                className={`bg-black relative pb-1 transition-colors duration-300
                   ${
                     isActive
                       ? "text-blue-400"
@@ -55,15 +60,11 @@ export function Navbar() {
                 <span
                   className={`absolute left-0 -bottom-0.5 h-[2px] w-full bg-red-400
                     transition-transform duration-300 ease-out
-                    ${
-                      isActive
-                        ? "scale-x-100"
-                        : "scale-x-0"
-                    }
+                    ${isActive ? "scale-x-100" : "scale-x-0"}
                     origin-left
                   `}
                 />
-              </a>
+              </button>
             </li>
           );
         })}
