@@ -2,6 +2,11 @@ import NGC1320png from "../assets/NGC1320.png"
 import relationpng from "../assets/relation.png"
 import plrelation from "../assets/PLrelation.png"
 import lightcurve from "../assets/lightcurve.png"
+import exposure from "../assets/exposure.png"
+import curve from "../assets/curve.png"
+import first from "../assets/first.png"
+import obs from "../assets/IMG_0875.jpeg"
+
 
 export type DetailedExperience = {
   title: string;
@@ -15,6 +20,9 @@ export type DetailedExperience = {
     textafter: string
   };
   blurbs?: string;
+  equation?: string;
+  equation2?: string;
+  smallblurb?: string;
   images?: string;
   imagecaption?: string;
   images2?: string;
@@ -39,7 +47,14 @@ export const detailedexperience: DetailedExperience[] = [
     subtitle: "Evergreen Valley College (Dual Enrollment)",
     date: "March 2024 - December 2025",
     description:
-      "Used APT photometry software and Python modules like astropy, photutils, and numpy to create a differential photometry pipeline for usage in ASTRO-98 astronomy research course, streamlining the process for future student use.",
+      "After taking my first astronomy courses concurrently at Evergreen Valley College as a dual enrollment student, I was able to connect my passion for astrophotography with the field of astronomy, and reached out to Dr. Celso Batalha, my astronomy professor. Under his tutelage, I was given the opportunity to do differential photometry at the EVC Observatory. My main role was sharing the workload of gathering data every other night of observing - during which I used my knowledge of astrophotography to learn more about observational astronomy - and to develop a pipeline that takes our exposures as time-series input to give us lightcurves, which we can then compare to the literature. The overall goal was to measure the feasibility of doing research with the observatory, as a proof-of-concept for future students. ",
+    blurbs: "The idea behind differential photometry is to use a reference star in the field of our exposures that is constant in magnitude and dose not pulsate. From that, we can determine a zero-point for different sets of exposures, correcting for instrumental pixel count variance across nights and getting the true pulsation of our target star. My pipeline does this differential photometry for a series of exposures, and calculates a light curve using the reference. ",
+    equation: "M = -2.5 \\log \\int_{0}^{\\infty} F(\\lambda) d\\lambda + C",
+    equation2: "M = -2.5 \\log F_{\\lambda } + C",
+    smallblurb: "where C is the zero-point determined from the reference star in the exposure, and F is at the specific wavelength we used in our filter for the second equation. This pipeline was developed for usage by ASTRO-98 students at EVC, to streamline the process and introduce students to basic astronomy research.",
+    images: exposure,
+    images2: curve,
+    imagecaption: "An example of the apertures fitted to both the reference star (left star in left image) and the target star (right star in left image) in one exposure. This is done for a series of exposures, and a light curve is obtained at the end (right image). ",
   },
   {
     title: "RR Lyrae Research", 
@@ -60,6 +75,9 @@ export const detailedexperience: DetailedExperience[] = [
     title: "A.R.R.O.W Club", 
     subtitle: "Evergreen Valley College (Dual Enrollment)", 
     date: "February - June 2024", 
-    description: "Secretary, Co-Founder, and team leader of A.R.R.O.W Club, a club focused on uniting stem disciplines under one collaborative environment."
+    description: "While taking classes at EVC as a dual enrollment student, under the recommendation of Dr. Celso Batalha and Dr. Mike Masuda, I collaborated with a group of students to co-found the A.R.R.O.W. Club (Astronomy, Rocketry, Robotics, and Other Worlds). Our idea was to found a club focused on uniting all STEM disciplines under one collaborative environment, with the goal of creating cool projects and learning from each other. As secretary, my duties involved pitching for funding at campus-wide ASG meetings, taking and maintaining detailed meeting minutes, and leading a team of students with varying, diverse STEM exprience. ",
+    images: first,
+    images2: obs,
+    imagecaption: "The left image shows one of our first meetings, where we launchd a water rocket with 3d printed fins. Some students even gathered flight data! On the left is an observing regime I conducted with another A.R.R.O.W student. We captured OIII data on Messier 57, the Ring Nebula. ",
   },
 ]
