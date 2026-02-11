@@ -1,11 +1,19 @@
 import NGC1320png from "../assets/NGC1320.png"
 import relationpng from "../assets/relation.png"
+import plrelation from "../assets/PLrelation.png"
+import lightcurve from "../assets/lightcurve.png"
 
 export type DetailedExperience = {
   title: string;
   subtitle: string;
   date: string;
   description: string;
+  descriptionwithlink?:{
+    text: string
+    linktext: string
+    linkurl: string
+    textafter: string
+  };
   blurbs?: string;
   images?: string;
   imagecaption?: string;
@@ -37,7 +45,16 @@ export const detailedexperience: DetailedExperience[] = [
     title: "RR Lyrae Research", 
     subtitle: "UC Santa Cruz", 
     date: "June 2024 - August 2024",
-    description: "Verified and double checked pulsational parameters already derived for these RR Lyrae candidates with ~20-300 kPc galactocentric distances. Discovered a beat period candidate, challenging an NGVS measurement, in addition to confirming  measurements for other candidates."
+    description: "This research was conducted under the Science Internship Program at UC Santa Cruz. I worked under Dr. Raja Guhathakurta and Dr. Yuting Feng on their research regarding RR Lyrae in the Milky Way's Stellar Halo - the outermost part of the galaxy. The stars we looked at were incredibly dim (~16 magnitude), so we used Hyper Suprime Cam survey data with an optimal combination of high cadence and photometric depth to obtain our light curves and find periodicity. ", 
+    descriptionwithlink: {
+      text: "With the derived period, we can use the tight period-luminosity relation RR Lyrae exhibit in the green wavelengths to find their luminosity and thus distance. The broad impact of this research included better mapping of the stellar halo to further investigate its structure and history, as well as proving the value of certain data analysis methods for the then upcoming Vera C. Rubin observatory with even higher cadence and photometric depth.",
+      linktext: "This research was published and presented",
+      linkurl: "https://ui.adsabs.harvard.edu/abs/2025AAS...24547003K/abstract",
+      textafter: "at the American Astronomical Society's 245th winter conference.",
+    }, 
+    images: plrelation,
+    imagecaption: "The period-luminosity-metallicity relation of RR Lyrae in different bands, calibrated with Catalina RRL in DES Y3. This relation makes RR Lyrae precise distance indicators. The g-band was used in this research. (Credits: Stringer et. al). On the right is a folded lightcurve with the period derived from a periodogram and Fourier analysis. From Chi-square analysis we can tell the curve is a good fit to the data. ",
+    images2: lightcurve,
   },
   {
     title: "A.R.R.O.W Club", 

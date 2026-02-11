@@ -24,7 +24,7 @@ export const experience: Experience[] = [
     title: "RR Lyrae Research", 
     subtitle: "UC Santa Cruz", 
     date: "June 2024 - August 2024",
-    description: "Verified and double checked pulsational parameters already derived for these RR Lyrae candidates with ~20-300 kPc galactocentric distances. Discovered a beat period candidate, challenging an NGVS measurement, in addition to confirming  measurements for other candidates."
+    description: "Verified and double checked pulsational parameters already derived for these RR Lyrae candidates with ~20-300 kPc galactocentric distances. Published and presented this research at AAS 245 Winter Conference."
   },
   {
     title: "A.R.R.O.W Club", 

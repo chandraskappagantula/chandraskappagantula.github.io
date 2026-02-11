@@ -17,6 +17,7 @@ export default function ProjectPage() {
       <p className="mt-2 text-white-400 flex justify-left">{project.description}</p>
       ‎ 
       <p className = "text-white-400">{project.blurbs}</p>
+      <p className = "text-white-400">{project.descriptionwithlink?.text} <a href = {project.descriptionwithlink?.linkurl} target = "_blank" rel = "noopener noreferrer" className = "text-blue-400 underline hover:text-blue-300">{project.descriptionwithlink?.linktext} </a> {project.descriptionwithlink?.textafter}</p>
       </div>
       ‎ 
       <div className = "flex justify-center max-h-full max-w-4xl max-w-full ">

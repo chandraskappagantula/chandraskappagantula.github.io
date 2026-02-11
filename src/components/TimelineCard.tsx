@@ -28,11 +28,11 @@ export function TimelineCard({experience, side }: Props) {
         `}
       >
         <div>
-          <h3 className="text-lg font-semibold">{experience.title}</h3>
+          <h3 className="text-lg font-semibold text-blue-400">{experience.title}</h3>
           <p className="text-sm text-gray-400">{experience.subtitle}</p>
         </div>
 
-        <span className="text-xs text-gray-400 whitespace-nowrap">
+        <span className="text-xs text-red-400 whitespace-nowrap">
           {experience.date}
         </span>
       </div>
