@@ -6,12 +6,19 @@ export type Experience = {
 };
 
 export const experience: Experience[] = [
+  {
+    title: "Undergraduate WAVE Research Fellow",
+    subtitle: "Caltech",
+    date: "Jun 2026 – Aug 2026",
+    description:
+      "Worked within the CHEX-MATE collaboration at Caltech to develop a querying and scientific data workflow to locate, classify, and mask AGN contamination in Sunyaev-Zeldovich effect maps of 110+ galaxy clusters. Modified an existing MCMC forward-modelling pipeline of the sample of clusters to integrate multidimensional masks into covariance-matrix generation and multiwavelength data analysis. Documented code changes, data products, and details of my work for future pipeline use.",
+  },
     {
-    title: "AGN Researcher",
+    title: "Undergraduate Student Researcher; Frost Scholarship",
     subtitle: "Cal Poly SLO",
     date: "Sep 2025 – Present",
     description:
-      "Analyzing stellar kinematics of megamaser disk galaxies using Keck IFU spectroscopy.",
+      "Investigating the MBH − σ⋆ relation in megamaser disk galaxies through analysis of Integral Field Unit spectroscopic data; as part of an ongoing research and publication effort, working to refine the black hole mass - stellar velocity dispersion relation using scientific computing methods. Recognized as a Frost Research Scholar ($10k per year minimum), with potential for future external validation. ",
   },
   {
     title: "Photometry & Observing @ EVC Observatory",

@@ -9,7 +9,7 @@ export function Intro() {
             <h1 className = "text-6x1 font-bold text-blue-400 tracking-tight flex items-center justify-center">Chandrasekhar (Chandra)</h1>
             <h1 className = "text-6x1 font-bold text-red-400 tracking-tight flex items-center justify-center">Kappagantula</h1>
             ‎ 
-            <h2 className = " flex items-center justify-center text-6x10 text-xl font-size-32px tracking-tight"> A first year Physics Student at Cal Poly SLO, researching the cosmos step by step</h2>
+            <h2 className = " flex items-center justify-center text-6x10 text-xl font-size-32px tracking-tight"> A second-year Physics Undegrad at Cal Poly SLO </h2>
             ‎ 
             <div className = "flex gap-10 mx-auto justify-center">
                 <IconButton href = "https://github.com/chandraskappagantula" label = "Github">
@@ -27,7 +27,7 @@ export function Intro() {
             </div>
             ‎ 
             <div className = "flex gap-10 mx-auto justify-center">
-                <Button href = "#research" text = "View Reserch">
+                <Button href = "#research" text = "View Research">
                     <p className = "text-blue-400"> View Experience </p>
                 </Button>
                 <Button href = "#contact" text = "Contact">
